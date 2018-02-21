@@ -114,4 +114,19 @@ public class DrawDemo
             pen.turn(360/5);
         }
     }
+    
+    /**
+     * Permite dibujar un poligono regular con n lados, es decir, si n vale 3
+     * sera un triangulo, si vale 4 sera un cuadrado, etc
+     */
+    public void drawPolygon(int n){
+        Pen pen = new Pen(200,100, myCanvas);
+        pen.setColor(Color.GREEN);
+        for(int i=0; i<n; i++){
+            pen.move(100);
+            pen.turn(360/n);
+        }
+    
+    }
+    
 }
