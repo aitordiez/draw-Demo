@@ -129,4 +129,16 @@ public class DrawDemo
     
     }
     
+    /**
+     * Permite dibujar una espiral como la que se muestra en la figura 6.6
+     */
+    public void drawSpiral(){
+        Pen pen = new Pen(200,100, myCanvas);
+        pen.setColor(Color.BLACK);
+        
+        for(int i=0; i<60; i++){
+            pen.move(i*2);
+            pen.turn(90);
+        }
+    }
 }
